@@ -19,7 +19,7 @@ export default function NewsGrid({ news }) {
 
   useEffect(() => {
     if (article.id) {
-      router(`/news/${article.id}`, { state: { article } });
+      router(`/${article.id}`, { state: { article } });
     }
   }, [article, router]);
 
